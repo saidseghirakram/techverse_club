@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* there is 3 fonts used in ui 
+  geist mono for paragraphs
+  geist for short texts
+  poppins for long
+*/
+body{
+  overflow-x: hidden;
+}
+
+*{
+  color: white ;
+}
+
+shadow-logo {
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255);
+}
+
+/* CSS for text gradient animation */
+@keyframes text-gradient {
+  0% {
+    color: #8B3889;
+  }
+  50% {
+    color: #9c40ff;
+  }
+  100% {
+    color: #8B3889;
+  }
+}
+
+/* Add the animate-text-gradient class for the animation */
+.animate-text-gradient {
+  animation: text-gradient 3s ease-in-out infinite;
+  font-family:  text-geistMono;
+}
