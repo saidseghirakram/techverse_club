@@ -83,7 +83,7 @@ const Events = () => {
             />
 
             <div className="relative group w-full">
-              <motion.img
+              <motion.img 
                 src={eventImage}
                 alt={selectedEvent.name}
                 className="w-full rounded-[12px] sm:h-auto h-[175px] transition-all duration-300 group-hover:blur-md"
