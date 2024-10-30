@@ -3,7 +3,6 @@ import { BentoCard } from "./ui/bento-grid";
 import { MagicCard } from "./ui/magic-card";
 import { useNavigate } from "react-router-dom";
 
-
 function PersonCard(person: MemberEntity | SpeakerEntity) {
   function getImageContent(image: MemberImage): React.ReactNode {
     if (image.isImage) {
@@ -86,7 +85,7 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
       onClick={handleCardClick}
     >
     <MagicCard
-      className="bg-secondary/50 border-none rounded-md  w-[290px] h-[433px]"
+      className={`bg-secondary/50 border-none rounded-md w-fit`}
     >
       <BentoCard
         name={person.name}
@@ -98,7 +97,7 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
             : undefined
         }
         background={background}
-        className={`bg-transparent  w-[290px] h-[433px] border-none shadow-none p-2  ${containerSizeClass}`}
+        className={`bg-transparent border-none shadow-none p-2 w-[220px] ${(person as MemberEntity).isLeader || (person as MemberEntity).isPresident || (person as MemberEntity).isFounder  ? 'h-[280px]' : 'h-[220px]'}  ${containerSizeClass}`}
         isActive={
           !!description &&
           description !== "Club Founder" &&
