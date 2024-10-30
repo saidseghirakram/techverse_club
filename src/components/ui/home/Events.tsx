@@ -7,18 +7,19 @@ import {
 } from '../../../components/ui/carousel'; // Adjust the import path accordingly
 import { events } from '../../../consts/index'; // Adjust the import path accordingly
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 function Events() {
   // State to track the selected event index
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   // Function to handle image click
-  const handleImageClick = (index:number) => {
+  const handleImageClick = (index: number) => {
     setSelectedIndex(index);
   };
 
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full">
       <div className='mb-14'>
         <span
           className="font-bold px-7 py-3 rounded-full"
@@ -38,39 +39,38 @@ function Events() {
       </div>
 
       {/* Div to show selected event details */}
-      <div className="w-[50%] p-4 bg-gray-800 text-white mb-4 rounded">
-        <h2 className="text-xl font-bold">{events[selectedIndex].name}</h2>
-        <p className="mt-2">{events[selectedIndex].descriptions}</p>
-        <p className="mt-2 text-sm">{events[selectedIndex].date}</p>
-        <p className="mt-2 font-semibold">{events[selectedIndex].place}</p>
-        <a
-          href={events[selectedIndex].website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 text-blue-500 underline"
-        >
-          Learn More
-        </a>
+      <div className='w-full flex justify-around items-center'>
+        <div>
+          <h1 className="font-geistMono text-[48px] ">{events[selectedIndex].name}</h1>
+        </div>
+        <div className="w-[497px] bg-secondary p-[16px] text-white mb-4 rounded-md">
+          <img src={events[selectedIndex].image} className='h-[521px] w-[465px]' alt="active_event" />
+          <Link
+            to={`/event-overview/${events[selectedIndex].name.replace(/\s+/g, '-').toLowerCase()}`} 
+            className="mt-4 text-white font-geistMono my-[20px]"
+          >
+            Learn more about the event
+          </Link>
+        </div>
       </div>
-      <div className=" w-full flex justify-center">
 
-      <Carousel className='w-[90%]'>
-        <CarouselPrevious />
-        <CarouselNext />
-        <CarouselContent className='w-1/3'>
-          {events.map((event, index) => (
-            <CarouselItem key={index} className="p-4">
-              {/* Make images clickable to update the selected event */}
-              <img
-                src={event.image}
-                alt={event.name}
-                className="h-64 w-full object-cover cursor-pointer"
-                onClick={() => handleImageClick(index)}
-              />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
+      <div className="w-full flex justify-center">
+        <Carousel className='w-[90%]'>
+          <CarouselPrevious />
+          <CarouselNext />
+          <CarouselContent className='w-1/3'>
+            {events.map((event, index) => (
+              <CarouselItem key={index} className="p-4">
+                <img
+                  src={event.imageSlider}
+                  alt={event.name}
+                  className="h-64 w-full object-contain cursor-pointer border-b-[20px] mb-5 border-b-secondary"
+                  onClick={() => handleImageClick(index)}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
     </div>
   );

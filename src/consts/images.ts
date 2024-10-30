@@ -13,13 +13,35 @@ import topRight from '../assets/images/Home/top_right.png'
 import bottomRight from '../assets/images/Home/bottom_right.png'
 import bottomleft from '../assets/images/Home/bottom_left.png'
 
+import bootcamp from '../assets/images/events/bootcamp.jpg'
+import devfest from '../assets/images/events/devfest.jpg'
+import openday from '../assets/images/events/openday.jpg'
+import impact from '../assets/images/events/impact.png'
+import tid from '../assets/images/events/tid.png'
+
+import bootcampHoriz from '../assets/images/events/slider/bootcampHoriz.jpg'
+import devfestHoriz from '../assets/images/events/slider/devfestHoriz.jpg'
+import impactHoriz from '../assets/images/events/slider/impactHoriz.jpg'
+import opendayHoriz from '../assets/images/events/slider/opendayHoriz.jpg'
+import tidHoriz from '../assets/images/events/slider/tidHoriz.jpg'
 
 
-import Main from '/assets/Events/TID/Main.jpg'
 
 const Images = { 
   events:{
-    Main
+    bootcamp,
+    openday,
+    devfest,
+    impact,
+    tid,
+    slider:{
+      bootcampHoriz,
+      devfestHoriz,
+      impactHoriz,
+      opendayHoriz,
+      tidHoriz
+
+    }
   },
   header:{
     topLeft,

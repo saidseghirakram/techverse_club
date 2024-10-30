@@ -1,15 +1,21 @@
+import imageSrc from "../consts/images";
+
 export const statistics = {
   members: 100,
   events: 5,
   participants: "1k",
 };
 
+
+
 export const events: EventEntity[] = [
   {
     name: "DEVFEST",
     descriptions:
       "It is an annual event presented by the GDG (Google Developers Group), where it stands as one of the most significant demonstrations the club presents every year. It consists of valuable lectures given by distinguished professors, doctors, and experts in various technical, artistic, and scientific fields, delivered interactively with those interested and the attendees in general, for three consecutive days. The club coordinated with the Techverse club, where the event served as the inaugural ceremony for the club, marking its entry into the world of university clubs and the beginning of its activities. Last year's event witnessed 8 valuable lectures presented by 8 distinguished doctors, from December 24-26, 2024.",
-    image: "devfest/devfest.png",
+    image: imageSrc.events.devfest,
+    imageSlider: imageSrc.events.slider.devfestHoriz,
+    
     date: "24th-26th December, 2024",
     speakers: [
       { name: "Mr. Abdelbasset Zerrouki" },
@@ -43,7 +49,8 @@ export const events: EventEntity[] = [
     name: "Open day",
     descriptions:
       "It is an event where the club and its branches are introduced, and new members are selected to join Techverse on its journey. The event provides an opportunity to present the club's goals, activities, and benefits to potential members, allowing them to get a better understanding and decide to join.",
-    image: "open_day/open_day.png",
+    image: imageSrc.events.openday,
+    imageSlider: imageSrc.events.slider.opendayHoriz,
     date: "15th January, 2024",
     speakers: [],
     statistics: [
@@ -62,7 +69,9 @@ export const events: EventEntity[] = [
     name: "101BOOTCAMP",
     descriptions:
       "The event consists of a series of workshops in the field of technology, aimed at students and individuals interested in learning more about this field, including 4 technical courses.",
-    image: "101-bootcamp/101-bootcamp.jpg",
+    image: imageSrc.events.bootcamp,
+    imageSlider: imageSrc.events.slider.bootcampHoriz,
+
     date: "20th April, 2024",
     speakers: [
       { name: "Mr. Chikh Imade-eddine" },
@@ -91,7 +100,9 @@ export const events: EventEntity[] = [
     name: "TID: Techverse Intelligence Day",
     descriptions:
       "It is a technological event presented by OWASP Algiers in collaboration with Techverse Club. Last year, it focused on cyber security and included a series of workshops and lectures for enthusiasts in this field. The event aims to enrich knowledge in the technical aspect and the goals of the field.",
-    image: "TID/Untitled-1 1.png",
+    image: imageSrc.events.tid,
+    imageSlider: imageSrc.events.slider.tidHoriz,
+
     date: "25th February to 5th March, 2024",
     speakers: [
       { name: "Mr. Amine Taher EL HOUARI" },
@@ -121,7 +132,9 @@ export const events: EventEntity[] = [
     name: "IMPACT Event",
     descriptions:
       "It is an online event that includes many topics with the best speakers in various fields.",
-    image: "impact_event/impact.png",
+    image: imageSrc.events.impact,
+    imageSlider: imageSrc.events.slider.impactHoriz,
+
     date: "1st March, 2024",
     speakers: [
       { name: "Mrs. Imane Fehis" },
@@ -141,6 +154,7 @@ export const events: EventEntity[] = [
     edition: 1,
   },
 ];
+
 
 
 export const departements: Departement[] = [
@@ -184,6 +198,12 @@ export const departements: Departement[] = [
     description:
       "The Human Resources manager recruits and manages student volunteers. They handle club member applications, organize orientation programs, and maintain records of student participation in various club activities.",
   },
+  {
+    name: "Multimedia Lead",
+    description:
+      "The Multimedia Lead department creates and curates audio-visual content for events, including videos, animations, and graphics. This team collaborates with designers and IT specialists to enhance event presentations and engage audiences through innovative multimedia solutions."
+  }
+  
 ];
 
 export const members: MemberEntity[] = [
@@ -205,6 +225,15 @@ export const members: MemberEntity[] = [
     },
   },
   // Leaders...
+  {
+    name: "benaissa mohamed yahia",
+    isLeader: true,
+    image: {
+      isImage: false,
+      nameShortCut: "MB",
+    },
+    departement: departements[8],
+  },
   {
     name: "Akram Titraoui",
     isLeader: true,
@@ -241,6 +270,7 @@ export const members: MemberEntity[] = [
     },
     departement: departements[3],
   },
+
   {
     name: "Feth Ennour Bachene",
     isLeader: true,

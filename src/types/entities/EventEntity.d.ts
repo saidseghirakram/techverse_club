@@ -2,6 +2,7 @@ interface EventEntity {
     name: string;
     descriptions: string;
     image: string;
+    imageSlider?: string;
     date: string;
     speakers: Speaker[];
     statistics: Statistics;
