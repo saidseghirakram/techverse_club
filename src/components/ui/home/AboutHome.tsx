@@ -7,7 +7,7 @@ import { cardsData ,statsData } from './../../../consts/home';
 
 function About() {
   return (
-    <div className="min-h-[1700px] px-4">
+    <div id='About' className="min-h-[1700px] px-4">
       <span
         className="font-bold px-7 py-3 rounded-full"
         style={{ boxShadow: "1px -1px 1px 1px #FFFFFF40 " }}

@@ -65,7 +65,7 @@ function Members() {
   const leaders = membersCards.filter((person) => person.isLeader);
 
   return (
-    <div className="min-h-[1500px] my-10 overflow-hidden">
+    <div id='Members' className="min-h-[1500px] my-10 overflow-hidden">
       <span
         className="font-bold px-7 py-3 rounded-full"
         style={{ boxShadow: "1px -1px 1px 1px #FFFFFF40 " }}

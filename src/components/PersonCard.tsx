@@ -25,7 +25,7 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
   if ((person as SpeakerEntity).isSpeaker) {
     containerSizeClass = "w-40 lg:w-40 lg:h-full justify-start py-0"; // medium size for speakers
   } else if ((person as MemberEntity).isMember) {
-    containerSizeClass = "lg:w-32"; // small size for regular members
+    containerSizeClass = "lg:w-40 lg:h-52 w-32 h-48"; // small size for regular members
   } else {
     containerSizeClass = "";
   }
@@ -97,7 +97,7 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
             : undefined
         }
         background={background}
-        className={`bg-transparent border-none shadow-none p-2 w-[220px] ${(person as MemberEntity).isLeader || (person as MemberEntity).isPresident || (person as MemberEntity).isFounder  ? 'h-[280px]' : 'h-[220px]'}  ${containerSizeClass}`}
+        className={`bg-transparent border-none shadow-none p-2 md:w-[220px] ${(person as MemberEntity).isLeader || (person as MemberEntity).isPresident || (person as MemberEntity).isFounder  ? 'md:h-[280px] h-[250px]' : 'md:h-[220px] h-[210px]'}  ${containerSizeClass}`}
         isActive={
           !!description &&
           description !== "Club Founder" &&

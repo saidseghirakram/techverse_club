@@ -55,7 +55,7 @@ const Events = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     if (selectedEvent?.image) {
-      import(`/assets/Events/${selectedEvent.image}`)
+      import(`/assets/Events/${selectedEvent.largeImage}`)
         .then((module) => setEventImage(module.default))
         .catch((error) => console.error("Error loading image:", error));
     }
@@ -83,7 +83,7 @@ const Events = () => {
             />
 
             <div className="relative group w-full">
-              <motion.img 
+              <motion.img
                 src={eventImage}
                 alt={selectedEvent.name}
                 className="w-full rounded-[12px] sm:h-auto h-[175px] transition-all duration-300 group-hover:blur-md"
@@ -210,12 +210,14 @@ const Events = () => {
           })}
         </motion.div>
       </motion.div>
-      <div className="flex flex-col items-center gap-8 w-full">
-        <h1 className="font-geist text-2xl md:text-3xl font-bold text-white">
-          Event Shots :
-        </h1>
-        <ShotsSection event={selectedEvent} />
-      </div>
+      {selectedEvent.event_shots && (
+        <div className="flex flex-col items-center gap-8 w-full">
+          <h1 className="font-geist text-2xl md:text-3xl font-bold text-white">
+            Event Shots :
+          </h1>
+          <ShotsSection event={selectedEvent} />
+        </div>
+      )}
       {selectedEvent.website && (
         <div className="flex flex-col items-center gap-8 w-full">
           <div className="flex flex-col items-center gap-8">

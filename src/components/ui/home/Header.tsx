@@ -5,7 +5,7 @@ import Images from '../../../consts/images';
 export function Header() {
   return (
 
-    <div className="mb-10 min-h-[700px] w-full gap-10  px-10 flex flex-col justify-center items-center">
+    <div id='Home' className="mb-10 min-h-[700px] w-full gap-10  px-10 flex flex-col justify-center items-center">
       
       <div className=" w-full sm:w-[100%] absolute top-0 left-0 h-[750px] z-0">
       <Spline scene="https://prod.spline.design/Y8rLgqzaAGtOeN-F/scene.splinecode" />

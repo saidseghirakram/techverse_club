@@ -56,6 +56,7 @@ const ReviewCard = ({
 }) => {
   return (
     <figure
+      id="Partners"
       className={cn(
         "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles

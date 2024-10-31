@@ -3,11 +3,12 @@ interface EventEntity {
     descriptions: string;
     image: string;
     imageSlider?: string;
+    largeImage: string
     date: string;
     speakers: Speaker[];
     statistics: Statistics;
     place: string;
-    event_shots: string[] | React.RefObject<HTMLImageElement>[] ;
+    event_shots: string[] | React.RefObject<HTMLImageElement>[] | null ;
     website?: string
     edition: number
 }

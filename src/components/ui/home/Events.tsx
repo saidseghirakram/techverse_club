@@ -25,7 +25,7 @@ function Events() {
   };
 
   return (
-    <div className="relative w-full">
+    <div id="Events" className="relative w-full">
       <div className='mb-14'>
         <span
           className="font-bold px-7 py-3 rounded-full"
@@ -58,7 +58,7 @@ function Events() {
         <div className="w-[497px] bg-secondary p-[16px] flex flex-col justify-center items-center text-white mb-4 rounded-md">
           <img src={events[selectedIndex].image} className='h-[521px] w-[60%] sm:w-[465px] mb-6' alt="active_event" />
           <Link
-            to={`/event-overview/${events[selectedIndex].name.replace(/\s+/g, '-').toLowerCase()}`} 
+            to={`/event-overview/${events[selectedIndex].name}`} 
             className=" text-white font-geistMono mt-[10px] my-[20px] underline"
           >
             Learn more about the event
