@@ -55,9 +55,7 @@ const Events = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     if (selectedEvent?.image) {
-      import(`/assets/Events/${selectedEvent.largeImage}`)
-        .then((module) => setEventImage(module.default))
-        .catch((error) => console.error("Error loading image:", error));
+      setEventImage(`/assets/Events/${selectedEvent.largeImage}`);
     }
   }, [selectedEvent]);
 
