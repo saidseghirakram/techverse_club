@@ -271,7 +271,7 @@ export const members: MemberEntity[] = [
     isLeader: true,
     image: {
       isImage: false,
-      nameShortCut: "IK",
+      nameShortCut: "IM",
     },
     departement: departements[7],
   },
@@ -290,7 +290,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "NT",
+      nameShortCut: "AH",
     },
     departement: departements[0],
   },
@@ -299,7 +299,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "KM",
+      nameShortCut: "MK",
     },
     departement: departements[0],
   },
@@ -308,7 +308,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "AB",
+      nameShortCut: "MH",
     },
     departement: departements[0],
   },
@@ -317,7 +317,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "KM",
+      nameShortCut: "TM",
     },
     departement: departements[0],
   },
@@ -326,7 +326,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "NT",
+      nameShortCut: "LZ",
     },
     departement: departements[0],
   },
@@ -337,7 +337,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "YB",
+      nameShortCut: "AG",
     },
     departement: departements[1],
   },
@@ -346,7 +346,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "LH",
+      nameShortCut: "AD",
     },
     departement: departements[1],
   },
@@ -355,7 +355,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "AB",
     },
     departement: departements[1],
   },
@@ -364,7 +364,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "AT",
     },
     departement: departements[1],
   },
@@ -373,7 +373,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "AA",
     },
     departement: departements[1],
   },
@@ -382,7 +382,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "AA",
     },
     departement: departements[1],
   },
@@ -391,7 +391,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "IC",
     },
     departement: departements[1],
   },
@@ -400,7 +400,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "LH",
     },
     departement: departements[1],
   },
@@ -409,7 +409,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "MB",
     },
     departement: departements[1],
   },
@@ -418,7 +418,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "OF",
     },
     departement: departements[1],
   },
@@ -427,7 +427,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "OH",
     },
     departement: departements[1],
   },
@@ -436,7 +436,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "ZO",
     },
     departement: departements[1],
   },
@@ -445,7 +445,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "OB",
+      nameShortCut: "BM",
     },
     departement: departements[1],
   },
@@ -456,7 +456,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "SM",
+      nameShortCut: "AC",
     },
     departement: departements[2],
   },
@@ -465,7 +465,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "RB",
+      nameShortCut: "AS",
     },
     departement: departements[2],
   },
@@ -474,7 +474,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "AH",
     },
     departement: departements[2],
   },
@@ -483,7 +483,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "AO",
     },
     departement: departements[2],
   },
@@ -492,7 +492,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "AA",
     },
     departement: departements[2],
   },
@@ -501,7 +501,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "HA",
     },
     departement: departements[2],
   },
@@ -510,7 +510,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "HK",
     },
     departement: departements[2],
   },
@@ -519,7 +519,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "JA",
     },
     departement: departements[2],
   },
@@ -528,7 +528,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "KM",
     },
     departement: departements[2],
   },
@@ -537,7 +537,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "KB",
     },
     departement: departements[2],
   },
@@ -546,7 +546,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "GK",
     },
     departement: departements[2],
   },
@@ -555,7 +555,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "KB",
     },
     departement: departements[2],
   },
@@ -564,7 +564,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "MT",
     },
     departement: departements[2],
   },
@@ -573,7 +573,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "RB",
     },
     departement: departements[2],
   },
@@ -582,7 +582,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "RZ",
     },
     departement: departements[2],
   },
@@ -591,7 +591,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "SB",
     },
     departement: departements[2],
   },
@@ -600,7 +600,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "HB",
     },
     departement: departements[2],
   },
@@ -609,7 +609,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FZ",
+      nameShortCut: "IS",
     },
     departement: departements[2],
   },
@@ -629,7 +629,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "LM",
+      nameShortCut: "AM",
     },
     departement: departements[3],
   },
@@ -638,7 +638,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "SD",
+      nameShortCut: "AB",
     },
     departement: departements[3],
   },
@@ -647,7 +647,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "SD",
+      nameShortCut: "AB",
     },
     departement: departements[3],
   },
@@ -656,7 +656,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "SD",
+      nameShortCut: "KK",
     },
     departement: departements[3],
   },
@@ -665,7 +665,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "SD",
+      nameShortCut: "ZS",
     },
     departement: departements[3],
   },
@@ -674,7 +674,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "SD",
+      nameShortCut: "ZM",
     },
     departement: departements[3],
   },
@@ -685,7 +685,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "YB",
+      nameShortCut: "AG",
     },
     departement: departements[4],
   },
@@ -694,7 +694,7 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "ML",
+      nameShortCut: "A",
     },
     departement: departements[4],
   },
@@ -703,56 +703,54 @@ export const members: MemberEntity[] = [
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "IB",
+      nameShortCut: "AA",
     },
     departement: departements[4],
   },
-
-  // Technique department members
   {
     name: "Hafri Fatima Zohra",
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "RM",
+      nameShortCut: "HF",
     },
-    departement: departements[5],
+    departement: departements[4],
   },
   {
     name: "Houssam",
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "AB",
+      nameShortCut: "H",
     },
-    departement: departements[5],
+    departement: departements[4],
   },
   {
     name: "Noufel Bensalem",
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "AB",
+      nameShortCut: "NB",
     },
-    departement: departements[5],
+    departement: departements[4],
   },
   {
     name: "Rafika Boulardjam",
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "AB",
+      nameShortCut: "RB",
     },
-    departement: departements[5],
+    departement: departements[4],
   },
   {
     name: "Roumaissa Guellabi",
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "AB",
+      nameShortCut: "RG",
     },
-    departement: departements[5],
+    departement: departements[4],
   },
   {
     name: "Yacine Boudiaf",
@@ -761,18 +759,56 @@ export const members: MemberEntity[] = [
       isImage: false,
       nameShortCut: "FK",
     },
-    departement: departements[5],
+    departement: departements[4],
   },
   {
     name: "Mohamed Islam Hadjer Braham",
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "FK",
+      nameShortCut: "MIHB",
+    },
+    departement: departements[4],
+  },
+
+  // Technique department members
+  {
+    name: "Oussama",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "O",
     },
     departement: departements[5],
   },
-
+  {
+    name: "Boukalfa Cherif",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "BC",
+    },
+    departement: departements[5],
+  },
+  {
+    name: "Ossama Fergani",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "BC",
+    },
+    departement: departements[5],
+  },
+  {
+    name: "Omar Gouasmi",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "OG",
+    },
+    departement: departements[5],
+  },
+  
   // Delegation department members
   {
     name: "Hafidha Bouabdellah",
