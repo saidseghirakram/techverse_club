@@ -3,10 +3,9 @@ import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { Icon } from "@iconify-icon/react/dist/iconify.js";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate, NavLink, useLocation } from "react-router-dom";
 import { handleScroll } from "../lib/handleScroll";
-import { NavLink } from "react-router-dom";
 
-// Links and corresponding sections
 const Links = [
   { label: "Home", href: "#Home" },
   { label: "About", href: "#About" },
@@ -19,6 +18,8 @@ function Navbar() {
   const [isMenuHidden, setIsHiddenMenu] = useState<boolean>(true);
   const [activeSection, setActiveSection] = useState<string>("");
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsHiddenMenu(!isMenuHidden);
@@ -26,18 +27,11 @@ function Navbar() {
 
   useEffect(() => {
     const handleScrollPosition = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScrollPosition);
-
-    return () => {
-      window.removeEventListener("scroll", handleScrollPosition);
-    };
+    return () => window.removeEventListener("scroll", handleScrollPosition);
   }, []);
 
   useEffect(() => {
@@ -49,9 +43,7 @@ function Navbar() {
           }
         });
       },
-      {
-        threshold: 0.7,
-      }
+      { threshold: 0.7 }
     );
 
     Links.forEach((link) => {
@@ -86,7 +78,7 @@ function Navbar() {
                   ? "text-secondary font-semibold"
                   : "hover:text-secondary font-normal"
               }`}
-              onClick={() => handleScroll(link.href)}
+              onClick={() => handleScroll(link.href, navigate, location)}
             >
               {link.label}
             </div>
@@ -98,6 +90,7 @@ function Navbar() {
               containerClassName="rounded-full hidden md:flex"
               as="button"
               className="bg-primary font-semibold items-center space-x-2"
+              onClick={() => handleScroll("#Contact", navigate, location)}
             >
               <div className="flex items-center gap-2">
                 <Icon icon="fluent-mdl2:contact" width="16" height="16" />
@@ -141,7 +134,7 @@ function Navbar() {
                   : "hover:text-secondary font-normal"
                 }`}
                 onClick={() =>
-                  handleScroll(link.href, () => setIsHiddenMenu(true))
+                  handleScroll(link.href, navigate, location, () => setIsHiddenMenu(true))
                 }
               >
                 {link.label}

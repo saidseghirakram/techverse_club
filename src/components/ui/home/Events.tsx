@@ -16,6 +16,7 @@ import {
 import { events } from '../../../consts/index'; 
 import { useState } from 'react';
 import { Link } from 'react-router-dom'; 
+import { handleClick } from "../../../lib/scrollTop";
 
 function Events() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -61,7 +62,9 @@ function Events() {
             to={`/event-overview/${events[selectedIndex].name}`} 
             className=" text-white font-geistMono mt-[10px] my-[20px] underline"
           >
-            Learn more about the event
+            <a onClick={handleClick} className="flex items-center">
+              Learn more about the event
+            </a>
           </Link>
         </div>
       </div>

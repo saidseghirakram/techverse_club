@@ -5,9 +5,12 @@ import discord from "@/assets/images/discord.png";
 import instagram from "@/assets/images/instagram.png";
 import linkedin from "@/assets/images/linkedin.png";
 import facebook from "@/assets/images/facebook.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { handleScroll } from "../lib/handleScroll";
+import { handleClick } from "../lib/scrollTop";
 function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <div className="border-t border-white/30 px-8 py-8 lg:py-16">
       <div className="flex flex-wrap justify-start items-start gap-8 md:gap-4 md:justify-between">
@@ -72,7 +75,7 @@ function Footer() {
                 Yahia Fares, Medea, ALG
               </div>
             </div>
-            <NavLink to="contact-us">
+            <NavLink to="contact-us" onClick={handleClick}>
               <HoverBorderGradient
                 containerClassName="rounded-full"
                 as="button"
@@ -91,7 +94,7 @@ function Footer() {
         <img className="md:w-2/5 w-full " src={logo} alt="" />
         <div className="flex items-end flex-col gap-2">
           <Icon
-            onClick={() => handleScroll("#Home")}
+            onClick={() => handleScroll("#Home", navigate, location)}
             className="bg-white text-primary p-2 cursor-pointer hover:scale-105 transition-all duration-200 w-8 h-8"
             icon="teenyicons:up-outline"
           />
