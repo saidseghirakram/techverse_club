@@ -71,7 +71,7 @@ const ReviewCard = ({
 
 export function Partners() {
   return (
-   <div className="mt-24 overflow-hidden relative">
+   <div className="mt-24 overflow-hidden relative" id="Partners">
     <div className="mb-4">
     <span
         className="font-bold px-7 py-3 rounded-full"
