@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BentoCard } from "./ui/bento-grid";
 import { MagicCard } from "./ui/magic-card";
 import { useNavigate } from "react-router-dom";
+import { handleClick } from "../lib/scrollTop";
 
 function PersonCard(person: MemberEntity | SpeakerEntity) {
   function getImageContent(image: MemberImage): React.ReactNode {
@@ -57,6 +58,7 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
     if (isSmallScreen && (person as MemberEntity).isLeader) {
       console.log(isSmallScreen);
       router(`/department-overview/${(person as Leader).departement?.name}`);
+      handleClick()
     }
   };
 
