@@ -3,39 +3,33 @@ import Marquee from "../../../components/ui/marquee";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    name: "GDG_MEDEA",
+    username: "@GDG_MEDEA",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
+    name: "OWASP_ALGIERS",
+    username: "@OWASP_ALGIERS",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "UNIV_MEDEA",
+    username: "@UNIV_MEDEA",
     img: "https://avatar.vercel.sh/john",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "almaahed.international",
+    username: "@almaahed.international",
     img: "https://avatar.vercel.sh/jane",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "NASS_ELKHIR",
+    username: "@NASS_ELKHIR",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "GDG_MEDEA",
+    username: "@GDG_MEDEA",
     img: "https://avatar.vercel.sh/james",
   },
 ];
@@ -47,16 +41,13 @@ const ReviewCard = ({
   img,
   name,
   username,
-  body,
 }: {
   img: string;
   name: string;
   username: string;
-  body: string;
 }) => {
   return (
     <figure
-      id="Partners"
       className={cn(
         "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
@@ -74,7 +65,6 @@ const ReviewCard = ({
           <p className="text-xs font-medium dark:text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
     </figure>
   );
 };
