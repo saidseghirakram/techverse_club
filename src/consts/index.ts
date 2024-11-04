@@ -18,15 +18,15 @@ export const events: EventEntity[] = [
     largeImage: 'devfest/devfest.png',
     date: "24th-26th December, 2024",
     speakers: [
-      { name: "Mr. Abdelbasset Zerrouki" },
-      { name: "Mr. Mohamed Mouzaoui" },
-      { name: "Mr. Anas Yahia" },
-      { name: "Mr. Ahmed Bachir Cherif" },
-      { name: "Mr. Raouf Rahish" },
-      { name: "Mr. Nabil Hadj Ahmed" },
-      { name: "Mr. Ayoub Manzou" },
-      { name: "Mr. Abderrahim Abdellaoui" },
-      { name: "Mr. Zineddine Boudegna" },
+      { name: "Mr. Abdelbasset Zerrouki", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_abdelbasset_zerrouki} },
+      { name: "Mr. Mohamed Mouzaoui", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_mouhtalks}},
+      { name: "Mr. Anas Yahia", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_yahia_anes} },
+      { name: "Mr. Ahmed Bachir Cherif", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_ahmed_bachir_cherif} },
+      { name: "Mr. Raouf Rahish", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_Raouf_Rahish} },
+      { name: "Mr. Nabil Hadj Ahmed", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_Nabil_Hadj_Ahmed} },
+      { name: "Mr. Ayoub Manzou", isSpeaker:true, image:{nameShortCut:'AM'} },
+      { name: "Mr. Abderrahim Abdellaoui", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_Abderrahim_Abdellaoui} },
+      { name: "Mr. Zineddine Boudegna", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.devfest.devfest_Zineddine_Boudegna} },
     ],
     statistics: [
       { participants: "700" },
@@ -52,12 +52,12 @@ export const events: EventEntity[] = [
     image: imageSrc.events.bootcamp,
     imageSlider: imageSrc.events.slider.bootcampHoriz,
     largeImage: '101-bootcamp/101-bootcamp.jpg',
-    date: "20th April, 2024",
+    date: "25th Fev - 03 Mar, 2024",
     speakers: [
-      { name: "Mr. Chikh Imade-eddine" },
-      { name: "Mr. Titraoui Akram" },
-      { name: "Mr. Takdenti Amine" },
-      { name: "Mr. Abdeldjalil Dahmani" },
+      { name: "Mr. Chikh Imade-eddine", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.bootcamp.bootcamp_Chikh_Imade_eddine} },
+      { name: "Mr. Titraoui Akram", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.bootcamp.bootcamp_Titraoui_Akram} },
+      { name: "Mr. Takdenti Amine", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.bootcamp.bootcamp_Amine} },
+      { name: "Mr. Abdeldjalil Dahmani", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.bootcamp.bootcamp_Abdeldjalil_Dahmani} },
     ],
     statistics: [
       { participants: "150" },
@@ -83,14 +83,14 @@ export const events: EventEntity[] = [
     image: imageSrc.events.tid,
     imageSlider: imageSrc.events.slider.tidHoriz,
     largeImage:"TID/Untitled-1 1.png",
-    date: "25th February to 5th March, 2024",
+    date: "20th April, 2024",
     speakers: [
-      { name: "Mr. Amine Taher EL HOUARI" },
-      { name: "Mrs. Meriam Maroua MAHDI" },
-      { name: "Mrs. Yasmine AZZAZ" },
-      { name: "Mr. Mahdi Nacer KERKAR" },
-      { name: "Mrs. Wissam BOUATTOU" },
-      { name: "Mr. Hichem BELGUENDOUZ" },
+      { name: "Mr. Amine Taher EL HOUARI", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.tid.tid_Amine_Taher_EL_HOUARI} },
+      { name: "Mrs. Meriam Maroua MAHDI", isSpeaker:true, image:{nameShortCut:'MM'} },
+      { name: "Mrs. Yasmine AZZAZ", isSpeaker:true, image:{nameShortCut:'YA'} },
+      { name: "Mr. Mahdi Nacer KERKAR", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.tid.tid_Mahdi_Nacer_KERKAR} },
+      { name: "Mrs. Wissam BOUATTOU", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.tid.tid_wissam_bouattou} },
+      { name: "Mr. Hichem BELGUENDOUZ", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.tid.tid_Hichem_BELGUENDOUZ} },
     ],
     statistics: [
       { participants: "100" },
@@ -115,11 +115,11 @@ export const events: EventEntity[] = [
     image: imageSrc.events.impact,
     imageSlider: imageSrc.events.slider.impactHoriz,
     largeImage:'impact/impact.png',
-    date: "1st March, 2024",
+    date: "9th Aug - 14 Sep, 2024",
     speakers: [
-      { name: "Mrs. Imane Fehis" },
-      { name: "Mr. Houssem Benmahieddine" },
-      { name: "Mr. Zakaria Houam" },
+      { name: "Mrs. Imane Fehis", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.impact.impact_imanefh }},
+      { name: "Mr. Houssem Benmahieddine", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.impact.impact_Houssem_Benmahieddine}},
+      { name: "Mr. Zakaria Houam", isSpeaker:true, image:{isImage:true, image_url:imageSrc.speakers.impact.impact_Zakaria_Houam }},
     ],
     statistics: [
       { participants: "500" },
@@ -171,7 +171,7 @@ export const departements: Departement[] = [
       "The Delegation department oversees event organization, focusing on sales-related aspects and attendee management. This team handles event decorations, creating engaging environments for attendees. They manage the check-in and check-out processes, ensuring a smooth flow of participants.",
   },
   {
-    name: "Human Resources",
+    name: "HR",
     description:
       "The Human Resources manager recruits and manages student volunteers. They handle club member applications, organize orientation programs, and maintain records of student participation in various club activities.",
   },
@@ -197,8 +197,8 @@ export const members: MemberEntity[] = [
     name: "Islam Hamadou",
     isPresident: true,
     image: {
-      isImage: false,
-      nameShortCut: "IH",
+      isImage: true,
+      image_url: imageSrc.members.president
     },
   },
   // Leaders...
@@ -215,8 +215,8 @@ export const members: MemberEntity[] = [
     name: "Kadik Salah Eddine",
     isLeader: true,
     image: {
-      isImage: false,
-      nameShortCut: "KS",
+      isImage: true,
+      image_url: imageSrc.members.it
     },
     departement: departements[1],
   },
@@ -276,7 +276,7 @@ export const members: MemberEntity[] = [
     departement: departements[7],
   },
   {
-    name: "benaissa mohamed yahia",
+    name: "Benaissa mohamed",
     isLeader: true,
     image: {
       isImage: false,

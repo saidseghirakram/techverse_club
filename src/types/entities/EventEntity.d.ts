@@ -5,7 +5,7 @@ interface EventEntity {
     imageSlider?: string;
     largeImage: string
     date: string;
-    speakers: Speaker[];
+    speakers: SpeakerEntity [];
     statistics: Statistics;
     place: string;
     event_shots: string[] | React.RefObject<HTMLImageElement>[] | null ;
@@ -13,10 +13,10 @@ interface EventEntity {
     edition: number
 }
 
-type Speaker = {
-    name: string, 
-    image?: string
-}
+// type Speaker = {
+//     name: string, 
+//     image?: string
+// }
 
 type Statistics = [
     {participants: string;},

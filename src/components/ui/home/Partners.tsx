@@ -72,23 +72,23 @@ const ReviewCard = ({
 export function Partners() {
   return (
    <div className="mt-24 overflow-hidden relative" id="Partners">
-    <div className="mb-4">
-    <span
-        className="font-bold px-7 py-3 rounded-full"
-        style={{ boxShadow: "1px -1px 1px 1px #FFFFFF40 " }}
-      >
-        Partners
-      </span>
-      <div className="font-medium text-white mt-6 mb-2 text-[36px]">
-      These achievements
+    <div className="flex flex-col md:items-start items-center mb-14 mt-2">
+        <span
+          className="text-primary text-xs px-4 py-2 rounded-3xl text-border bg-gradient-to-r from-transparent to-white/5"
+          style={{ boxShadow: "1px -1px 1px 1px #FFFFFF40 " }}
+        >
+          Partners
+        </span>
+        <div className="font-medium text-center md:text-start text-white mt-2 mb-2 text-3xl md:text-[36px]">
+          These achievements
+        </div>
+        <p
+          style={{ opacity: "0.7" }}
+          className="font-normal text-center md:text-start text-gray-50 mt-2 mb-2 text-[20px]"
+        >
+          wouldn’t have been possible without our sponsors
+        </p>
       </div>
-      <p
-        style={{ opacity: "0.7" }}
-        className="font-normal text-gray-50 mt-6 mb-2 text-[20px]"
-      >
-        wouldn’t have been possible without our sponsors
-      </p>
-    </div>
      <div className=" flex h-[500px] w-full flex-col items-center justify-center  rounded-lg  ">
      
      <Marquee pauseOnHover className="[--duration:20s]">

@@ -3,11 +3,12 @@ import { BentoCard } from "./ui/bento-grid";
 import { MagicCard } from "./ui/magic-card";
 import { useNavigate } from "react-router-dom";
 import { handleClick } from "../lib/scrollTop";
+import { getFirstLetters } from "../lib/getFirstLetters";
 
 function PersonCard(person: MemberEntity | SpeakerEntity) {
   function getImageContent(image: MemberImage): React.ReactNode {
     if (image.isImage) {
-      return image.image_url;
+      return (<img src={image.image_url} alt={getFirstLetters(person.name)} className="h-full object-center"/>)
     } else {
       return image.nameShortCut;
     }
@@ -19,7 +20,7 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
   } else if ((person as MemberEntity).isMember) {
     backgroundSizeClass = "w-20 lg:w-24 m-2 h-28 lg:h-28 text-2xl"; // small size for regular members
   } else {
-    backgroundSizeClass = "w-28 lg:w-32 h-32 lg:h-36 m-4 text-3xl";
+    backgroundSizeClass = "w-28 lg:w-44 h-32 lg:h-44 m-4 text-3xl ";
   }
 
   let containerSizeClass = "";
@@ -56,7 +57,6 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
 
   const handleCardClick = () => {
     if (isSmallScreen && (person as MemberEntity).isLeader) {
-      console.log(isSmallScreen);
       router(`/department-overview/${(person as Leader).departement?.name}`);
       handleClick()
     }
@@ -65,9 +65,9 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
   const background = (
     <div className="flex flex-col items-center">
       <div
-        className={`font-poppins font-normal ${backgroundSizeClass} flex text-secondary justify-center items-center border-2  border-secondary`}
+        className={`font-poppins overflow-hidden font-normal ${backgroundSizeClass} flex text-secondary justify-center items-center border-2  border-secondary`}
       >
-        {getImageContent((person as MemberEntity).image)}
+        {getImageContent((person as MemberEntity || person as SpeakerEntity).image)}
       </div>
     </div>
   );
@@ -99,7 +99,7 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
             : undefined
         }
         background={background}
-        className={`bg-transparent border-none shadow-none p-2 md:w-[220px] ${(person as MemberEntity).isLeader || (person as MemberEntity).isPresident || (person as MemberEntity).isFounder  ? 'md:h-[280px] h-[250px]' : 'md:h-[220px] h-[210px]'}  ${containerSizeClass}`}
+        className={`bg-transparent border-none shadow-none p-2 md:w-[220px] ${(person as MemberEntity).isLeader || (person as MemberEntity).isPresident || (person as MemberEntity).isFounder  ? 'md:h-[300px] h-[250px]' : 'md:h-[220px] h-[210px]'}  ${containerSizeClass}`}
         isActive={
           !!description &&
           description !== "Club Founder" &&

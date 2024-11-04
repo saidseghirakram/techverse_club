@@ -9,6 +9,7 @@ import PersonCard from "../components/PersonCard";
 import { useParams } from "react-router-dom";
 import { events } from "../consts";
 import { useEffect, useState } from "react";
+import { getFirstLetters } from "../lib/getFirstLetters";
 
 const fadeIn = {
   hidden: { opacity: 0 },
@@ -43,13 +44,6 @@ const Events = () => {
     return (
       <div className="mx-16 py-8">No event exist with current pathname</div>
     );
-  }
-
-  function getFirstLetters(name: string) {
-    return name
-      .split(" ")
-      .map((word: string) => word[0])
-      .join("");
   }
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -173,12 +167,19 @@ const Events = () => {
         >
           {selectedEvent.speakers.map((speaker, index) => {
             return (
+              // @ts-ignore
               <PersonCard
                 name={speaker.name}
                 isSpeaker={true}
-                image={{
-                  nameShortCut: getFirstLetters(speaker.name),
-                }}
+                image={
+                  speaker.image.isImage
+                    ? {
+                        isImage: true,
+                        // @ts-ignore
+                        image_url: speaker.image.image_url,
+                      }
+                    : { nameShortCut: getFirstLetters(speaker.name) }
+                }
                 key={index}
               />
             );

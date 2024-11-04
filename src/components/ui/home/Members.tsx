@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import useInViewAnimation from '../../../lib/useInViewAnimation';
 import { members as allMembers } from '../../../consts/index';
 import PersonCard from "../../PersonCard";
 
@@ -9,8 +11,8 @@ export const membersCards: MemberEntity[] = filteredMembers.map((member) => {
   const baseMember: MemberEntityBase = {
     name: member.name,
     image: member.image.isImage
-      ? { isImage: true, image_url: member.image.image_url } 
-      : { isImage: false, nameShortCut: member.image.nameShortCut }, 
+      ? { isImage: true, image_url: member.image.image_url }
+      : { isImage: false, nameShortCut: member.image.nameShortCut },
   };
 
   if (member.isFounder) {
@@ -43,7 +45,7 @@ export const membersCards: MemberEntity[] = filteredMembers.map((member) => {
       isPresident: true,
       isMember: false,
       departement: null,
-    } as President; 
+    } as President;
   }
 
   // Default case for regular members
@@ -54,7 +56,7 @@ export const membersCards: MemberEntity[] = filteredMembers.map((member) => {
     isPresident: false,
     isMember: true,
     departement: member.departement || null,
-  } as Member; 
+  } as Member;
 });
 
 function Members() {
@@ -65,56 +67,84 @@ function Members() {
   const leaders = membersCards.filter((person) => person.isLeader);
 
   return (
-    <div id='Members' className="min-h-[1500px] my-10 overflow-hidden">
-      <span
-        className="font-bold px-7 py-3 rounded-full"
-        style={{ boxShadow: "1px -1px 1px 1px #FFFFFF40 " }}
-      >
-        Members
-      </span>
-      <div className="font-medium text-white mt-6 mb-2 text-[36px]">
-        Let me introduce you to
+    <div id='Members' className="min-h-[1500px] mt-16 overflow-hidden">
+      <div className="flex flex-col md:items-start items-center mb-14 mt-2">
+        <span
+          className="text-primary text-xs px-4 py-2 rounded-3xl text-border bg-gradient-to-r from-transparent to-white/5"
+          style={{ boxShadow: "1px -1px 1px 1px #FFFFFF40 " }}
+        >
+          Members
+        </span>
+        <motion.div
+          className="font-medium text-center md:text-start text-white mt-2 mb-2 text-3xl md:text-[36px]"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+        >
+          Let me introduce you to
+        </motion.div>
+        <motion.p
+          style={{ opacity: "0.7" }}
+          className="font-normal text-center md:text-start text-gray-50 mt-2 mb-2 text-[20px]"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.3 } }}
+        >
+          Our departments including members.
+        </motion.p>
       </div>
-      <p
-        style={{ opacity: "0.7" }}
-        className="font-normal text-gray-50 mt-6 mb-16 text-[20px]"
-      >
-        Our events with their inspiring details.
-      </p>
 
       <div className="w-full flex flex-col content-center items-center justify-center">
         {/* Display founders and president in a responsive manner */}
         <div className="w-full lg:mb-[100px]  mb-8">
           <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-4  ">
-            {foundersAndPresident.map((person, index) => (
-              <div 
-                key={index} 
-                className="flex-shrink-0 mb-8 flex flex-col items-center" 
-                style={{ flexBasis: 'calc(33.33% - 16px)' }} >
-                <PersonCard {...person} />
-                {person.isFounder && (
-                  <div className="h-2 w-2 bg-red-500 mt-2" /> 
-                )}
-                {person.isPresident && (
-                  <div className="h-2 w-2 bg-green-500 mt-2" />
-                )}
-              </div>
-            ))}
+            {foundersAndPresident.map((person, index) => {
+              // eslint-disable-next-line react-hooks/rules-of-hooks
+              const [ref, controls] = useInViewAnimation({ triggerOnce: true, threshold: 0.1 });
+
+              return (
+                <motion.div
+                  key={index}
+                  // @ts-ignore
+                  ref={ref}
+                  className="flex-shrink-0 mb-4 flex flex-col items-center"
+                  initial={{ opacity: 0, y: 50 }}
+                  // @ts-ignore
+                  animate={controls}
+                  variants={{
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.3 } },
+                  }}
+                  style={{ flexBasis: 'calc(33.33% - 16px)' }}
+                >
+                  <PersonCard {...person} />
+                </motion.div>
+              );
+            })}
           </div>
         </div>
         {/* leaders */}
         <div className="w-full flex justify-center items-center">
           {/* Centered responsive columns for leaders */}
           <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-4">
-            {leaders.map((person, index) => (
-              <div 
-                key={index} 
-                className="flex-shrink-0 mb-8"
-                style={{ flexBasis: 'calc(33.33% - 16px)' }} 
-              >
-                <PersonCard {...person} />
-              </div>
-            ))}
+            {leaders.map((person, index) => {
+              const [ref, controls] = useInViewAnimation({ triggerOnce: true, threshold: 0.1 });
+
+              return (
+                <motion.div
+                  key={index}
+                  // @ts-ignore
+                  ref={ref}
+                  className="flex-shrink-0 mb-8"
+                  initial={{ opacity: 0, y: 50 }}
+                  // @ts-ignore
+                  animate={controls}
+                  variants={{
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.3 } },
+                  }}
+                  style={{ flexBasis: 'calc(33.33% - 16px)' }}
+                >
+                  <PersonCard {...person} />
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>

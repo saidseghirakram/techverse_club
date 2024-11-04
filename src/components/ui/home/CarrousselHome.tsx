@@ -1,7 +1,19 @@
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../carousel";
-import { events } from "../../../consts/index";
+import { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../carousel';
+import { events } from '../../../consts/index';
 
-function CarrousselHome() {
+const CarrousselHome = () => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
   return (
     <div className="h-[1000px] mt-16 px-4">
       <span
@@ -20,18 +32,33 @@ function CarrousselHome() {
         Our events with their inspiring details.
       </p>
 
-      {/* Carousel Component */}
       <Carousel className="relative ">
         <CarouselPrevious />
         <CarouselContent>
-          <div className="flex flex-row gap-3  justify-center">
+          <motion.div
+            className="flex flex-row gap-3  justify-center"
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={controls}
+            variants={{
+              visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+            }}
+          >
             {events.map((event, index) => (
-              <CarouselItem key={index} className="flex justify-center items-center  w-[100px]   pb-3  border-b-4 border-secondary border-solid"> 
-                <img src={event.image} alt={event.name} className="w-full h-[180px]" />
-           
+              <CarouselItem key={index} className="flex justify-center items-center  w-[100px]   pb-3  border-b-4 border-secondary border-solid">
+                <motion.img
+                  src={event.image}
+                  alt={event.name}
+                  className="w-full h-[180px]"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={controls}
+                  variants={{
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.2 } },
+                  }}
+                />
               </CarouselItem>
-            ))} 
-          </div>
+            ))}
+          </motion.div>
         </CarouselContent>
         <CarouselNext />
       </Carousel>

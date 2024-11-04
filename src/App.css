@@ -35,3 +35,26 @@ shadow-logo {
   animation: text-gradient 3s ease-in-out infinite;
   font-family:  text-geistMono;
 }
+
+.gradient-text {
+  background: linear-gradient(90deg, #870283 0%, #ffffff 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.text-border {
+  -webkit-text-stroke: 0.2px #ffffff;
+}
+
+

@@ -1,8 +1,10 @@
-type MemberImage = 
-  | { isImage: true; image: string }
-  | { isImage?: false; nameShortCut: string };
+type SpeakerImage = 
+  { image: { isImage: true; image_url: string } }
+  | { image: { isImage?: false; nameShortCut: string } };
 
-interface SpeakerEntity extends MemberImage {
-    name: string;
-    isSpeaker: true
+interface Speaker {
+  name: string;
+  isSpeaker: true;
 }
+
+type SpeakerEntity = Speaker & SpeakerImage;

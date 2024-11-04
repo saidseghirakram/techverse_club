@@ -36,10 +36,18 @@ function Department() {
       (dep) => dep.name.toLowerCase() === department?.toLowerCase()
     );
     if (!selectedDepartment) {
-      return <div className="mx-16 py-8">No department exist with current pathname</div>;
+      return (
+        <div className="mx-16 py-8">
+          No department exist with current pathname
+        </div>
+      );
     }
   } else {
-    return <div className="mx-16 py-8">No department exist with current pathname</div>;
+    return (
+      <div className="mx-16 py-8">
+        No department exist with current pathname
+      </div>
+    );
   }
 
   const membersInDepartment: MemberEntity[] = members.filter(
@@ -47,6 +55,7 @@ function Department() {
       (member as Member).departement?.name === selectedDepartment?.name
   );
   const leader = membersInDepartment.find((member) => member.isLeader)?.name;
+  const leaderInfos = membersInDepartment.find((member) => member.isLeader);
 
   // Animation Variants
   const fadeInUp = {
@@ -109,7 +118,7 @@ function Department() {
           stroke="url(#grad1)"
         />
       </motion.svg>
-      
+
       <motion.svg
         width={691}
         height={417}
@@ -186,7 +195,7 @@ function Department() {
           animate="visible"
         />
       </motion.svg>
-      
+
       {selectedDepartment && (
         <motion.div
           className="flex flex-col items-center md:mx-32 gap-4 z-50"
@@ -209,6 +218,7 @@ function Department() {
         transition={{ duration: 0.6 }}
         className="z-10 bg-primary shadow-2xl shadow-primary md:px-32"
       >
+        {/* @ts-ignore */}
         <PersonCard
           name={leader as string}
           departement={{
@@ -216,9 +226,18 @@ function Department() {
             description: selectedDepartment?.description as string,
           }}
           isLeader={true}
-          image={{
-            nameShortCut: "SK",
-          }}
+          // @ts-ignore
+          image={
+            // @ts-ignore
+            leaderInfos.image.isImage
+              ? {
+                  isImage: true,
+                  // @ts-ignore
+                  image_url: leaderInfos.image.image_url,
+                }
+              : // @ts-ignore
+                { nameShortCut: leaderInfos?.image.nameShortCut }
+          }
         />
       </motion.div>
 
@@ -237,13 +256,24 @@ function Department() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
+                      {/* @ts-ignore */}
                       <PersonCard
                         name={member.name}
                         isMember={true}
                         departement={(member as Member).departement}
-                        image={{
-                          nameShortCut: (member as Member).image.nameShortCut,
-                        }}
+                        image={
+                          member.image.isImage
+                            ? {
+                                isImage: true,
+                                // @ts-ignore
+                                image_url: member.image.image_url,
+                              }
+                                // @ts-ignore
+                            : { 
+                              // @ts-ignore
+                              nameShortCut: member.image.nameShortCut 
+                            }
+                        }
                       />
                     </motion.div>
                   </CarouselItem>
