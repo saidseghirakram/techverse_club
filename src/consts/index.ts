@@ -515,6 +515,15 @@ export const members: MemberEntity[] = [
     departement: departements[2],
   },
   {
+    name: "Semmana Houda",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "HK",
+    },
+    departement: departements[2],
+  },
+  {
     name: "Jakboub Abdallah",
     isMember: true,
     image: {
@@ -602,7 +611,7 @@ export const members: MemberEntity[] = [
       isImage: false,
       nameShortCut: "AB",
     },
-    departement: departements[8],
+    departement: departements[2],
   },
   {
     name: "Houda Boudjebbour",
@@ -717,15 +726,6 @@ export const members: MemberEntity[] = [
     departement: departements[4],
   },
   {
-    name: "Akram",
-    isMember: true,
-    image: {
-      isImage: false,
-      nameShortCut: "A",
-    },
-    departement: departements[4],
-  },
-  {
     name: "Amine Amellal",
     isMember: true,
     image: {
@@ -809,6 +809,15 @@ export const members: MemberEntity[] = [
     departement: departements[5],
   },
   {
+    name: "Azeddine Aioula",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "AA",
+    },
+    departement: departements[5],
+  },
+  {
     name: "Boukalfa Cherif",
     isMember: true,
     image: {
@@ -861,15 +870,6 @@ export const members: MemberEntity[] = [
     image: {
       isImage: false,
       nameShortCut: "NS",
-    },
-    departement: departements[6],
-  },
-  {
-    name: "badri nouha",
-    isMember: true,
-    image: {
-      isImage: false,
-      nameShortCut: "BN",
     },
     departement: departements[6],
   },
@@ -982,6 +982,24 @@ export const members: MemberEntity[] = [
       nameShortCut: "AB",
     },
     departement: departements[8],
+  },
+  {
+    name: "Akram",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "A",
+    },
+    departement: departements[8],
+  },
+  {
+    name: "Akram",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "A",
+    },
+    departement: departements[7],
   },
   {
     name: "Sarah Seffar",
