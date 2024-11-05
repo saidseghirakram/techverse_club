@@ -909,6 +909,7 @@ export const members: MemberEntity[] = [
     },
     departement: departements[6],
   },
+
   {
     name: "Taki",
     isMember: true,
@@ -975,6 +976,15 @@ export const members: MemberEntity[] = [
     departement: departements[8],
   },
   {
+    name: "Akram",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "A",
+    },
+    departement: departements[8],
+  },
+  {
     name: "Kawther Merabet",
     isMember: true,
     image: {
@@ -984,11 +994,11 @@ export const members: MemberEntity[] = [
     departement: departements[8],
   },
   {
-    name: "Akram",
+    name: "Takdenti Douaa",
     isMember: true,
     image: {
       isImage: false,
-      nameShortCut: "A",
+      nameShortCut: "TD",
     },
     departement: departements[8],
   },
