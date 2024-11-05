@@ -735,6 +735,15 @@ export const members: MemberEntity[] = [
     departement: departements[4],
   },
   {
+    name: "Jakboub Abdallah",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "JA",
+    },
+    departement: departements[4],
+  },
+  {
     name: "Hafri Fatima Zohra",
     isMember: true,
     image: {
@@ -981,6 +990,15 @@ export const members: MemberEntity[] = [
     image: {
       isImage: false,
       nameShortCut: "A",
+    },
+    departement: departements[8],
+  },
+  {
+    name: "Jakboub Abdallah",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "JA",
     },
     departement: departements[8],
   },
