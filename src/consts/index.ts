@@ -596,7 +596,7 @@ export const members: MemberEntity[] = [
     departement: departements[2],
   },
   {
-    name: "Sarah",
+    name: "Sarah Seffar",
     isMember: true,
     image: {
       isImage: false,
@@ -984,7 +984,7 @@ export const members: MemberEntity[] = [
     departement: departements[8],
   },
   {
-    name: "Sarah",
+    name: "Sarah Seffar",
     isMember: true,
     image: {
       isImage: false,
