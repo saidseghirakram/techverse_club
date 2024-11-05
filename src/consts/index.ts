@@ -551,15 +551,6 @@ export const members: MemberEntity[] = [
     departement: departements[2],
   },
   {
-    name: "Guernina khouloud",
-    isMember: true,
-    image: {
-      isImage: false,
-      nameShortCut: "GK",
-    },
-    departement: departements[2],
-  },
-  {
     name: "Kinda boulahlib",
     isMember: true,
     image: {
@@ -967,7 +958,7 @@ export const members: MemberEntity[] = [
 
   // multimedia
   {
-    name: "Abir Bensalem",
+    name: "Abderaouf Ganif",
     isMember: true,
     image: {
       isImage: false,
@@ -976,7 +967,7 @@ export const members: MemberEntity[] = [
     departement: departements[8],
   },
   {
-    name: "Abderaouf Ganif",
+    name: "Abir Bensalem",
     isMember: true,
     image: {
       isImage: false,
@@ -1008,6 +999,15 @@ export const members: MemberEntity[] = [
     image: {
       isImage: false,
       nameShortCut: "AB",
+    },
+    departement: departements[8],
+  },
+  {
+    name: "Guernina khouloud",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "GK",
     },
     departement: departements[8],
   },
