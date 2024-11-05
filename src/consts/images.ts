@@ -27,6 +27,8 @@ import tidHoriz from '../assets/images/events/slider/tidHoriz.jpg'
 
 import it from '../assets/images/members/it_leader.jpg'
 import president from '../assets/images/members/islam.jpg'
+import technique from '../assets/images/members/technique_leader.jpg'
+import delegation from '../assets/images/members/delegation_leader.jpg'
 
 import devfest_yahia_anes from '../assets/images/speakers/devfest/yahia_anes.jpg'
 import devfest_mouhtalks from '../assets/images/speakers/devfest/mouhtalks-pic.webp'
@@ -68,7 +70,9 @@ const Images = {
   },
   members:{
     it,
-    president
+    president,
+    technique,
+    delegation
   },
   speakers:{
     devfest:{

@@ -252,8 +252,8 @@ export const members: MemberEntity[] = [
     name: "Yacine Medjeber",
     isLeader: true,
     image: {
-      isImage: false,
-      nameShortCut: "YM",
+      isImage: true,
+      image_url: imageSrc.members.technique,
     },
     departement: departements[5],
   },
@@ -261,8 +261,8 @@ export const members: MemberEntity[] = [
     name: "Meriem Hasnaoui",
     isLeader: true,
     image: {
-      isImage: false,
-      nameShortCut: "MH",
+      isImage: true,
+      image_url: imageSrc.members.delegation,
     },
     departement: departements[6],
   },
@@ -387,15 +387,6 @@ export const members: MemberEntity[] = [
     departement: departements[1],
   },
   {
-    name: "Imad Chikh",
-    isMember: true,
-    image: {
-      isImage: false,
-      nameShortCut: "IC",
-    },
-    departement: departements[1],
-  },
-  {
     name: "Lotfi Hallas",
     isMember: true,
     image: {
@@ -442,6 +433,15 @@ export const members: MemberEntity[] = [
   },
   {
     name: "Benhadjer Mohamed",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "BM",
+    },
+    departement: departements[1],
+  },
+  {
+    name: "Fares Naoui",
     isMember: true,
     image: {
       isImage: false,
@@ -542,7 +542,7 @@ export const members: MemberEntity[] = [
     departement: departements[2],
   },
   {
-    name: "guernina khouloud",
+    name: "Guernina khouloud",
     isMember: true,
     image: {
       isImage: false,
@@ -594,6 +594,15 @@ export const members: MemberEntity[] = [
       nameShortCut: "SB",
     },
     departement: departements[2],
+  },
+  {
+    name: "Sarah",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "AB",
+    },
+    departement: departements[8],
   },
   {
     name: "Houda Boudjebbour",
@@ -661,6 +670,15 @@ export const members: MemberEntity[] = [
     departement: departements[3],
   },
   {
+    name: "Khelladi Anes",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "KK",
+    },
+    departement: departements[3],
+  },
+  {
     name: "Zitouni Sendous",
     isMember: true,
     image: {
@@ -682,6 +700,15 @@ export const members: MemberEntity[] = [
   // External department members
   {
     name: "Abdo Goudjil",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "AG",
+    },
+    departement: departements[4],
+  },
+  {
+    name: "Oussama Fergani",
     isMember: true,
     image: {
       isImage: false,
@@ -783,15 +810,6 @@ export const members: MemberEntity[] = [
   },
   {
     name: "Boukalfa Cherif",
-    isMember: true,
-    image: {
-      isImage: false,
-      nameShortCut: "BC",
-    },
-    departement: departements[5],
-  },
-  {
-    name: "Ossama Fergani",
     isMember: true,
     image: {
       isImage: false,
@@ -940,6 +958,33 @@ export const members: MemberEntity[] = [
   // multimedia
   {
     name: "Abir Bensalem",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "AB",
+    },
+    departement: departements[8],
+  },
+  {
+    name: "Abderaouf Ganif",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "AB",
+    },
+    departement: departements[8],
+  },
+  {
+    name: "Kawther Merabet",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "AB",
+    },
+    departement: departements[8],
+  },
+  {
+    name: "Sarah",
     isMember: true,
     image: {
       isImage: false,
