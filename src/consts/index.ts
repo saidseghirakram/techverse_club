@@ -1012,6 +1012,15 @@ export const members: MemberEntity[] = [
     departement: departements[8],
   },
   {
+    name: "Mohamed Islam Takdenti",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "MT",
+    },
+    departement: departements[8],
+  },
+  {
     name: "Takdenti Douaa",
     isMember: true,
     image: {
