@@ -95,7 +95,7 @@ function Members() {
       <div className="w-full flex flex-col content-center items-center justify-center">
         {/* Display founders and president in a responsive manner */}
         <div className="w-full lg:mb-[100px]  mb-8">
-          <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-4  ">
+          <div className="flex flex-wrap justify-center gap-6 mx-auto max-w-5xl px-4">
             {foundersAndPresident.map((person, index) => {
               // eslint-disable-next-line react-hooks/rules-of-hooks
               const [ref, controls] = useInViewAnimation({ triggerOnce: true, threshold: 0.1 });
@@ -105,7 +105,7 @@ function Members() {
                   key={index}
                   // @ts-ignore
                   ref={ref}
-                  className="flex-shrink-0 mb-4 flex flex-col items-center"
+                  className="flex-shrink-0 mb-4 "
                   initial={{ opacity: 0, y: 50 }}
                   // @ts-ignore
                   animate={controls}
@@ -123,7 +123,7 @@ function Members() {
         {/* leaders */}
         <div className="w-full flex justify-center items-center">
           {/* Centered responsive columns for leaders */}
-          <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center max-w-5xl gap-6 mx-auto px-4">
             {leaders.map((person, index) => {
               const [ref, controls] = useInViewAnimation({ triggerOnce: true, threshold: 0.1 });
 

@@ -73,7 +73,9 @@ function PersonCard(person: MemberEntity | SpeakerEntity) {
   );
 
   let description = null;
-  if ((person as MemberEntity).isFounder) {
+  if ((person as MemberEntity).isFounder && (person.name =='Benaissa mohamed')) {
+    description = "Vice President";
+  }else if((person as MemberEntity).isFounder){
     description = "Club Founder";
   } else if ((person as MemberEntity).isLeader) {
     description = `${(person as Leader).departement?.name} Lead`;
