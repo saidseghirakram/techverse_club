@@ -277,12 +277,11 @@ export const members: MemberEntity[] = [
   },
   {
     name: "Benaissa mohamed",
-    isLeader: true,
+    isFounder: true,
     image: {
       isImage: false,
       nameShortCut: "BY",
     },
-    departement: departements[8],
   },
   // Design department members
   {
@@ -959,7 +958,7 @@ export const members: MemberEntity[] = [
   // multimedia
   {
     name: "Abderaouf Ganif",
-    isMember: true,
+    isLeader: true,
     image: {
       isImage: false,
       nameShortCut: "AB",
@@ -976,7 +975,7 @@ export const members: MemberEntity[] = [
     departement: departements[8],
   },
   {
-    name: "Akram",
+    name: "Akram Mekaddem",
     isMember: true,
     image: {
       isImage: false,
@@ -1030,7 +1029,7 @@ export const members: MemberEntity[] = [
     departement: departements[8],
   },
   {
-    name: "Akram",
+    name: "Akram Mekaddem",
     isMember: true,
     image: {
       isImage: false,
