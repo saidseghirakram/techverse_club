@@ -303,6 +303,15 @@ export const members: MemberEntity[] = [
     departement: departements[0],
   },
   {
+    name: "Fatma Zohra Miloudi",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "MH",
+    },
+    departement: departements[0],
+  },
+  {
     name: "Mouadh Haceini",
     isMember: true,
     image: {
@@ -378,6 +387,15 @@ export const members: MemberEntity[] = [
   },
   {
     name: "Azeddine Aioula",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "AA",
+    },
+    departement: departements[1],
+  },
+  {
+    name: "Hadil Zaoudi",
     isMember: true,
     image: {
       isImage: false,
@@ -515,6 +533,24 @@ export const members: MemberEntity[] = [
   },
   {
     name: "Semmana Houda",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "HK",
+    },
+    departement: departements[2],
+  },
+  {
+    name: "Sameh Neda",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "HK",
+    },
+    departement: departements[2],
+  },
+  {
+    name: "Sarah Abbadi",
     isMember: true,
     image: {
       isImage: false,
@@ -882,6 +918,15 @@ export const members: MemberEntity[] = [
     departement: departements[6],
   },
   {
+    name: "Nesrine Djellal",
+    isMember: true,
+    image: {
+      isImage: false,
+      nameShortCut: "NH",
+    },
+    departement: departements[6],
+  },
+  {
     name: "Safaa Tchouketch",
     isMember: true,
     image: {
@@ -937,7 +982,7 @@ export const members: MemberEntity[] = [
     departement: departements[6],
   },
   {
-    name: "sonia",
+    name: "Sonia",
     isMember: true,
     image: {
       isImage: false,
@@ -946,7 +991,7 @@ export const members: MemberEntity[] = [
     departement: departements[6],
   },
   {
-    name: "maroua saili",
+    name: "Maroua Sail",
     isMember: true,
     image: {
       isImage: false,
