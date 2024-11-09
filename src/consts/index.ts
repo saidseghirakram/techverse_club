@@ -937,7 +937,7 @@ export const members: MemberEntity[] = [
     departement: departements[6],
   },
   {
-    name: "sonia",
+    name: "Sonia",
     isMember: true,
     image: {
       isImage: false,
@@ -946,7 +946,7 @@ export const members: MemberEntity[] = [
     departement: departements[6],
   },
   {
-    name: "maroua saili",
+    name: "Maroua Sail",
     isMember: true,
     image: {
       isImage: false,
