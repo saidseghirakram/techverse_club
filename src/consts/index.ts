@@ -279,8 +279,8 @@ export const members: MemberEntity[] = [
     name: "Benaissa mohamed",
     isFounder: true,
     image: {
-      isImage: false,
-      nameShortCut: "BY",
+      isImage: true,
+      image_url: imageSrc.members.vp,
     },
   },
   // Design department members
