@@ -1005,8 +1005,8 @@ export const members: MemberEntity[] = [
     name: "Abderaouf Ganif",
     isLeader: true,
     image: {
-      isImage: false,
-      nameShortCut: "AB",
+      isImage: true,
+      image_url: imageSrc.members.multimedia,
     },
     departement: departements[8],
   },

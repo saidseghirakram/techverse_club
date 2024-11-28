@@ -30,6 +30,7 @@ import president from '../assets/images/members/islam.jpg'
 import technique from '../assets/images/members/technique_leader.jpg'
 import delegation from '../assets/images/members/delegation_leader.jpg'
 import vp from '../assets/images/members/vp.jpeg'
+import multimedia from '../assets/images/members/multimedia.jpg'
 
 import devfest_yahia_anes from '../assets/images/speakers/devfest/yahia_anes.jpg'
 import devfest_mouhtalks from '../assets/images/speakers/devfest/mouhtalks-pic.webp'
@@ -74,7 +75,8 @@ const Images = {
     president,
     technique,
     delegation,
-    vp
+    vp,
+    multimedia
   },
   speakers:{
     devfest:{
