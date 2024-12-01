@@ -32,6 +32,11 @@ const reviews = [
     username: "@GDG_MEDEA",
     img: "https://avatar.vercel.sh/james",
   },
+  {
+    name: "DATACAMP",
+    username: "@DATACAMP",
+    img: "https://avatar.vercel.sh/jill",
+  },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
